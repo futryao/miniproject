@@ -26,6 +26,10 @@
    }
    h3{
     color: #f603a3;
+    font-weight: 600;
+   }
+   h4{
+    font-weight: 600;
    }
    p{
     color: white;
@@ -93,4 +97,8 @@
    }
    .nav-link:active{
     color: #f603a3;
+   }
+
+   *{
+    font-family: 'Poppins';
    }
