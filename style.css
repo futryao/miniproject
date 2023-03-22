@@ -1,0 +1,106 @@
+.modal{
+    margin-top: 40px;
+   }
+   .alert{
+    margin-top: 24px;
+    margin-bottom: 0;
+   }
+   .breadcrumb{
+    margin-left: 30px;
+    margin-top: 30px;
+   }
+   .breadcrumb-item{
+    --bs-breadcrumb-divider-color: white;
+   }
+   .modal-content{
+    border: 1px solid #f603a3;
+    background: rgb(6,1,93);
+    background: linear-gradient(90deg, rgba(6,1,93,1) 0%, rgba(71,25,171,1) 33%, rgba(112,8,176,1) 87%);
+   }
+   .sign-in{
+    display: contents;
+   }
+   body{
+    background: rgb(6,1,93);
+    background: linear-gradient(90deg, rgba(6,1,93,1) 0%, rgba(71,25,171,1) 33%, rgba(112,8,176,1) 87%);
+   }
+   h3{
+    color: #f603a3;
+   }
+   p{
+    color: white;
+   }
+   .button-primary{
+    background-color: #f603a3;
+    color: white;
+    border: 1.5px solid #f603a3;
+   }
+   .button-outline{
+    border: 1.5px solid #f603a3;
+    color: #f603a3;
+   }
+   .btn:hover{
+    background-color:fuchsia;
+    border: 1.5px solid fuchsia;
+   }
+   .navbar{
+    display: 100%;
+   }
+   .sinopsis{
+    text-align: justify;
+   }
+   .caption{
+    text-align: left;
+    width: 30%;
+    height: 500px;
+    position: absolute;
+    top: 60px;
+   }
+   .banner{
+    height: 500px;
+   }
+   .card{
+    border: none;
+    background-color: none;
+   }
+   .poster{
+    height: 234px;
+   }
+   .margin{
+    margin: 24px 78px;
+    color: #f603a3;
+   }
+   .poster:hover{
+    border: 3px solid #f603a3;
+   }
+   .btn-close-modal{
+    color: #f603a3;
+    position: relative;
+    left: 760px;
+    top: 7px;
+   }
+   .card-icon{
+    background-color: none;
+   }
+  .bi-play-circle-fill-modal{
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    color: #f603a3;
+   }
+   .bi-bookmark-heart-fill-modal{
+    color: #f603a3;
+   }
+   .form{
+    width: 450px;
+    padding: 10px 50px;
+    margin: 50px auto;
+    border: 3px solid #f603a3;
+    border-radius: 10px;
+   } 
+   .title{
+    color: white;
+   }
+   .nav-link:active{
+    color: #f603a3;
+   }
