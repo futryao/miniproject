@@ -17,9 +17,6 @@
 
         <link rel="stylesheet" href="style.css">
         <style>
-          .button-primary{
-            width: 344px;
-          }
           .button-primary-subs{
             width: 344px;
             background-color: #f603a3;
@@ -53,6 +50,7 @@
               margin-left: 52px;
             }
           }
+
         </style>
     </head> 
     <body>
@@ -93,11 +91,38 @@
                             <li class="nav-item">
                               <a class="nav-link active" aria-current="page" href="subscribe.html">Subscribe</a>
                           </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="darkMode" href="#">Light Theme</a>
+                        </li>
+                        <script>
+                          document.getElementById('darkMode').onclick=function(){
+                            if(document.getElementById('darkMode').innerText === 'Light Theme'){
+                              document.body.style.background= 'linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db)';
+                              document.getElementById('darkMode').innerText = 'Dark Theme';
+                              document.getElementsByTagName('a')[0].style.color = 'rgba(6,1,93,1)';                            
+                              for (var i = 1; i < 13; i++) {
+                                  document.getElementsByTagName('a')[i].style.color = '#f603a3';
+                              }
+                              var modalBg = document.getElementById('modalSignin');
+                              modalSignin.style.background='linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db)';
+                            }
+                            else if(document.getElementById('darkMode').innerText === 'Dark Theme'){
+                              document.body.style.background= 'linear-gradient(90deg, rgba(6,1,93,1) 0%, rgba(71,25,171,1) 33%, rgba(112,8,176,1) 87%)';
+                              document.getElementById('darkMode').innerText = 'Light Theme';
+                              document.getElementsByTagName("a")[0].style.color = "#f5deb3";           
+                              for (var i = 1; i < 13; i++) {
+                                  document.getElementsByTagName('a')[i].style.color = 'white';
+                              }
+                              var modalBg = document.getElementById('modalSignin');
+                              modalSignin.style.background='linear-gradient(90deg, rgba(6,1,93,1) 0%, rgba(71,25,171,1) 33%, rgba(112,8,176,1) 87%)';
+                            }
+                          }
+                        </script>
                         </ul>
                         <form class="d-flex" role="search">
                           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                           <button class="btn btn-warning button-primary" type="submit">Search</button>
-                        </form>   
+                        </form>  
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 sign-in">
                             <li class="nav-item">
                               <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signin" style="margin-left: 20px;">Sign In</a>
@@ -147,7 +172,7 @@
         </form>
         <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
+              <div class="modal-content" id="modalSignin">
                 <div class="modal-body">
                    <form>
                     <h3 style="text-align: center;">Sign In</h3>

@@ -12,6 +12,13 @@
    .breadcrumb-item{
     --bs-breadcrumb-divider-color: white;
    }
+   .caption{
+    text-align: left;
+    width: 30%;
+    height: 500px;
+    position: absolute;
+    top: 60px;
+   }
    .modal-content{
     border: 1px solid #f603a3;
     background: rgb(6,1,93);
